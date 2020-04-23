@@ -4,7 +4,7 @@
 @Author: Mar Ping
 @Date: 2020-04-07 20:22:08
 @LastEditors: Mar Ping
-@LastEditTime: 2020-04-07 23:30:34
+@LastEditTime: 2020-04-08 16:48:00
 '''
 import serial
 import serial.tools.list_ports
@@ -32,7 +32,7 @@ def start_port(ports,speed,timex):                      #端口_波特率_超时
         ser.timeout = timex
         ser.open()
 
-    return ser
+    return ser                                          #返回端口对象
 
 
 
